@@ -4,6 +4,7 @@ body {
   line-height: 22px;
   font-weight: normal;
   color:white;
+  background-color: #849d8f;
 }
 
 .slider h1 {
@@ -40,3 +41,28 @@ body {
   color: white;
 
 }
+
+.slider {
+  background-image: url(/img/slider.png)  /*-узнать про слайдер*/
+}
+
+.promo-block-raspberries{
+  background-image: url(/img/raspberry-banner.png) no-repeat;
+}
+
+.promo-block-choko {
+  background-image: url(/img/chocolate-banner.png) no-repeat;
+}
+
+.about {
+  background-image: url(/img/wafer.jpg);
+}
+
+.news-blog {
+  background: url(/img/blog-background.png) no-repeat;
+}
+
+.mailing {
+  background-image: url(/img/post-dispatch.png) no-repeat;
+}
+
