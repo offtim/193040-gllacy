@@ -6,6 +6,52 @@ body {
   color:white;
   background-color: #849d8f;
 }
+/*header*/
+.logo {
+  float: left;
+  width: 153px;
+}
+
+.main-navigation {
+  float: left;
+  width: 560px; /*??*/
+}
+
+.main-navigation ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+.main-navigation li>a{
+  color: #ffffff;
+}
+
+.main-navigation li {
+  display: inline;
+}
+
+.dropdown {
+  display:none;
+}
+
+.user-block {
+  float: right;
+  width: 560px;
+}
+
+.header-bottom {
+  clear: both;
+  float: right;
+}
+
+a {
+  text-decoration: none;
+}
+/*body*/
+.container{
+  clear: both;
+}
 
 .slider h1 {
   font-size: 60px;
@@ -48,21 +94,51 @@ body {
 
 .promo-block-raspberries{
   background-image: url(/img/raspberry-banner.png) no-repeat;
+  width: 560px;
+  float: left;
+
 }
 
 .promo-block-choko {
   background-image: url(/img/chocolate-banner.png) no-repeat;
+  width: 560px;
+  float: right;
+}
+
+.product-wrapper {
+  clear: both;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.product-item {
+  float: left;
+  width: 267px;
+}
+
+.product-item:last-child {
+  float:right;
+  width: 267px;
 }
 
 .about {
   background-image: url(/img/wafer.jpg);
+  clear: both;
 }
 
 .news-blog {
   background: url(/img/blog-background.png) no-repeat;
+  float: left;
+  width: 560px;
 }
 
 .mailing {
-  background-image: url(/img/post-dispatch.png) no-repeat;
+  background: url(/img/post-dispatch.png) no-repeat;
+  float: right;
+  width: 560px;
+}
+
+.map {
+  clear: both;
 }
 
