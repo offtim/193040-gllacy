@@ -1,33 +1,68 @@
 body {
-  font-family: "Roboto",sans-serif;
+  font-family: "Roboto", "Tahoma", sans-serif;
   font-size: 16px;
-  color:white;
-  line-height: 1.3em;
+  line-height: 22px;
   font-weight: normal;
+  color:white;
+  background-color: #849d8f;
 }
 
 .slider h1 {
   font-size: 60px;
   font-weight: bold;
+  line-height: 60px;
 }
 
 .about h1 {
   font-size: 24px;
-  font-family: "Roboto-Medium", sans-serif;
-  color: #323232;
   font-weight: bold;
-  line-height: 1.2em;
+  line-height: 30px;
+  color: #323232;
 }
 
 .promo-row h2 {
   font-size: 35px;
-  line-height: 1.1em;
-  color: #ffffff;
+  line-height: 41px;
   font-weight: bold;
+  color: #ffffff;
 }
 
 .news-blog h2 {
   font-size: 16px;
-  color: #5a5a5a;
+  line-height: 22px;
   font-weight: normal;
+  color: #5a5a5a;
 }
+
+.container h1 {
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: bold;
+  color: white;
+
+}
+
+.slider {
+  background-image: url(/img/slider.png)  /*-узнать про слайдер*/
+}
+
+.promo-block-raspberries{
+  background-image: url(/img/raspberry-banner.png) no-repeat;
+}
+
+.promo-block-choko {
+  background-image: url(/img/chocolate-banner.png) no-repeat;
+}
+
+.about {
+  background-image: url(/img/wafer.jpg);
+}
+
+.news-blog {
+  background: url(/img/blog-background.png) no-repeat;
+}
+
+.mailing {
+  background-image: url(/img/post-dispatch.png) no-repeat;
+}
+
