@@ -132,7 +132,7 @@ a {
   margin: 20px auto;
   padding: 0;
   height: 450px;
-  
+
 }
 
 .product-item {
@@ -150,9 +150,10 @@ a {
 }
 
 .about {
-  background: url(/img/wafer.png) no-repeat;
+  background: url(/img/wafer.jpg) repeat-x;
   height: 306px;
-  margin: 20px auto;
+  width: 100%;
+  margin: 0px auto;
   margin-bottom: 40px;
   }
 
@@ -166,18 +167,18 @@ a {
   width: 100%;
   list-style: none;
   padding: 0;
-  display: block;    
+  display: block;
 }
 
 .about-content li{
-  color:#323232; 
+  color:#323232;
   width: 35%;
 }
 */
 .news-blog {
   background: url(/img/blog-background.png) no-repeat;
   float: left;
-  width: 49%;
+  width: 49.5%;
   margin-right: 1%;
   height: 220px;
 }
@@ -185,9 +186,9 @@ a {
 .mailing {
   background: url(/img/post-dispatch.png) no-repeat;
   float: right;
-  width: 49%;
+  width: 49.5%;
   height: 220px;
-  
+
 }
 
 /*footer*/
