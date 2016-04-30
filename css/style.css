@@ -14,7 +14,7 @@ body {
 
 .main-navigation  {
   float: left;
-  width: 50%px;
+  width:80%px;
 }
 
 .main-navigation ul {
@@ -60,6 +60,7 @@ a {
   max-width: 1200px;
   min-width: 900px;
   margin: 0 auto;
+  padding: 0 2.3%;
 }
 
 .slider h1 {
@@ -107,18 +108,19 @@ a {
 
 .promo-row{
   width: 100%;
+  margin-bottom: 40px;
 }
 
 
 .promo-block {
-  padding: 15px;
-  width: 47%;
-  height: 100%;
+  width: 49%;
+  height: 229px;
 }
 
 .promo-block-raspberries{
   background: url(/img/raspberry-banner.png) no-repeat;
   float: left;
+  margin-right: 1%;
 }
 
 .promo-block-choko {
@@ -127,40 +129,65 @@ a {
 }
 
 .product-wrapper {
-  margin: 0 auto;
+  margin: 20px auto;
+  padding: 0;
+  height: 450px;
+  
 }
 
 .product-item {
   float: left;
-  width: 25%;
+  margin-right: 2%;
+  width: 23%;
+  text-align: center;
+  font-size: 16px;
 }
 
 .product-item:last-child {
   float:right;
   width: 25%;
+  margin-right: 0px;
 }
 
 .about {
-  margin: 0 auto;
   background: url(/img/wafer.png) no-repeat;
-  height: auto;
-}
+  height: 306px;
+  margin: 20px auto;
+  margin-bottom: 40px;
+  }
+
 .about-content {
-  width: 90%;
   margin: 0 auto;
-  height: auto;
+  padding: 1% 2%;
 }
 
+/*
+.about-content ul {
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  display: block;    
+}
+
+.about-content li{
+  color:#323232; 
+  width: 35%;
+}
+*/
 .news-blog {
   background: url(/img/blog-background.png) no-repeat;
   float: left;
-  width: 50%;
+  width: 49%;
+  margin-right: 1%;
+  height: 220px;
 }
 
 .mailing {
   background: url(/img/post-dispatch.png) no-repeat;
   float: right;
-  width: 50%;
+  width: 49%;
+  height: 220px;
+  
 }
 
 /*footer*/
@@ -170,7 +197,7 @@ a {
 }
 .footer-info {
   float:left;
-  width: 40%;
+  width: 60%;
 }
 
 .footer-info a{
@@ -178,6 +205,6 @@ a {
 }
 
 .footer-copyright {
-  width: 40%;
+  width: 20%;
   float: right;
 }
