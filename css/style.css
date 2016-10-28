@@ -22,25 +22,22 @@ body > input[type="radio"] {
 .btn {
   display: inline-block;
   vertical-align: top;
-  font-size: 15px;
   font-weight: bold;
   color: #fff;
   border-radius: 30px;
   text-decoration: none;
-  padding: 5px 15px 5px 15px;
-  background: #f26843;
   background: linear-gradient(to bottom, #f26843 , #e74a35 );
+  -webkit-transition: background 0.1s linear;
+  -moz-transition: background 0.1s linear;
+  -o--transition: background 0.1s linear;
+  transition: background 0.1s linear;
   border: none;
   box-shadow: 0 2px 3px #9d4435;
 }
 
-.btn:hover {
-  background: linear-gradient(to top , #ec6f5e, #ec6f5e);
-}
-
-.btn:active {
-  background: linear-gradient(to top , #f26843, #e74b36);
-  box-shadow: inset 0 2px 3px #9d4435;
+.btn:hover,
+.btn:focus {
+  background: linear-gradient(to top , #ec6f5e, #ea7767);
 }
 
 .hidden-btn {
@@ -84,17 +81,18 @@ body > input[type="radio"] {
 .main-header {
   font-family: "Roboto";
   font-weight: 500;
-  padding-top: 9px;
+  padding-top: 10px;
 }
 .logo {
   float: left;
   width: 20%;
-  float: left;
 }
 
 .navigation {
   float: left;
   width: 45%;
+  margin-top: 10px;
+  margin-left: 1%;
 }
 
 ul, li {
@@ -110,6 +108,13 @@ ul, li {
   font-weight: 600;
   position: relative;
   padding: 10px 15px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  -webkit-transition: background 0.1s linear;
+  -moz-transition: background 0.1s linear;
+  -o--transition: background 0.1s linear;
+  transition: background 0.1s linear;
   }
 
 .main-item:hover {
@@ -216,24 +221,38 @@ ul, li {
 }
 .search {
   display: inline-block;
-  background-color: rgba(255, 255, 255, 0.2);
+  width: 17px;
+  height: 17px;
+  background: rgba(255, 255, 255, 0.2);
+  transition: background-image 0.1s linear;
   vertical-align: top;
   cursor: pointer;
   position: relative;
-  padding: 16px;
+  padding: 8px;
   border-radius: 50%;
   background-image: url(../img/spritesheet.png);
-  background-position: -475px 2px;
+  background-position: -474px 3px;
   background-repeat: no-repeat;
 }
 
 .search:hover{
-  background: #f8f7f4;
-  background-image: url(/img/spritesheet.png);
-  background-position: -502px 2px;
+  background: #f8f7f4;  
+  background-image: url(../img/spritesheet.png);
+  background-position: -501px 3px;
   background-repeat: no-repeat;
-
 }
+
+.search:hover::after {
+content: '';
+display: block;
+position: absolute;
+width: 40px;
+height: 30px;
+left: -6px;
+opacity: 0; 
+bottom: -15px;
+background-color: #939393;
+  }
 
 .search form{
   display: none;
@@ -288,26 +307,29 @@ ul, li {
   vertical-align: top;
   position: relative;
   font-size: 0;
-  margin-left: 10px;
-  background-image: url(../img/spritesheet.png);
-  background-position: -155px -5px;
-  background-repeat: no-repeat;
-  
+  margin-left: 10px;  
 }
 
-/*.login::after {
+.login::before {
   content: ''; 
   display: block;
   position: absolute;
   width: 20px;
   height: 19px;
-  left: 0;
-  top: 0;
+  top: 6px;
+  left: 12px;
   background-image: url(../img/spritesheet.png);
   background-position: -155px -5px;
-}*/
+  background-repeat: no-repeat;
+}
 
-.login > a{
+.login:hover::before {
+  background-image: url(../img/spritesheet.png);
+  background-position: -185px -5px;
+  background-repeat: no-repeat;
+}
+
+.login > a {
   display: block;
   color:#fff;
   padding: 5px 16px;
@@ -318,22 +340,22 @@ ul, li {
   text-decoration: none;
 }
 
-.login:hover > a {
+.login:hover  a {
   background-color: #f8f7f4;
-  background-image: url(../img/spritesheet.png);
-  background-position: -5px -214px;
   color: #323232;
   font-weight: 500;
 }
 
-.login:hover {
-  background-image: url(../img/spritesheet.png);
-  background-position: -5px -214px;
-  background-repeat: no-repeat;
-}
-.login::after {
-  top: 6px;
-  left: 12px;
+.login:hover::after {
+content: '';
+display: block;
+position: absolute;
+width: 100px;
+height: 30px;
+left: -2px;
+opacity: 0;
+bottom: -15px;
+background-color: #939393;
 }
 
 .login form {
@@ -1658,7 +1680,6 @@ p.contact-phone {
   border-radius: 100%;
   font-size: 0;
   border: 3px solid rgba(255, 255, 255, 0.5);
-  background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.8;
 }
@@ -1674,8 +1695,10 @@ p.contact-phone {
   border: 3px solid rgba(255, 255, 255, 0.7);
 }
 
-.social-btn-twitter {
-  background-image: url(../img/twitter.png);
+.social-btn .social-btn-twitter {
+  background-image: url(../img/spritesheet.png);
+  background-position: -595px -5px;
+  background-repeat: no-repeat;
 }
 
 .social-btn-inst {
@@ -1689,3 +1712,4 @@ p.contact-phone {
 .social-btn-vk {
   background-image: url(../img/vk.png);
 }
+
